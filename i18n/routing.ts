@@ -5,10 +5,9 @@ export const routing = defineRouting({
   // A list of all locales that are supported
   locales: ["en", "fr", "de"],
 
-  // Used when no locale matches
   defaultLocale: "en",
   pathnames: {
-    "/contact": {
+    "/contact": { 
       en: "/contact-me",
       fr: "/contactez-moi",
       de: "/kontaktiere-mich",
