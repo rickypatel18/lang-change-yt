@@ -1,9 +1,6 @@
 {
   "HomePage": {
     "title": "Hallo!",
-    "welcome": {
-      "title": "Willkommen auf der Startseite"
-    },
     "contact": "Zur Kontaktseite"
   },
   "contactForm": {

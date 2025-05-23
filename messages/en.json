@@ -1,9 +1,6 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "welcome": {
-      "title": "Welcome to the home page"
-    },
     "contact": "Go to the contact page"
   },
   "contactForm": {

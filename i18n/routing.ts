@@ -2,12 +2,11 @@ import { createNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
   locales: ["en", "fr", "de"],
 
   defaultLocale: "en",
   pathnames: {
-    "/contact": { 
+    "/contact": {
       en: "/contact-me",
       fr: "/contactez-moi",
       de: "/kontaktiere-mich",
