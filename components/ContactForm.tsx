@@ -1,6 +1,15 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
+import { useForm } from "react-hook-form";
+import {
+  ContactFormValues,
+  getContactFormSchema,
+} from "@/lib/contact-form.schema";
 import {
   Form,
   FormControl,
@@ -9,15 +18,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  ContactFormValues,
-  getContactFormSchema,
-} from "@/lib/contact-form.schema";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations } from "next-intl";
-import { useForm } from "react-hook-form";
 
 
 export function ContactForm() {
@@ -34,7 +34,6 @@ export function ContactForm() {
   });
 
   function onSubmit(data: ContactFormValues) {
-    // Handle form submission
     console.log(data);
   }
 
